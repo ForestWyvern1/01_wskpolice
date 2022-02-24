@@ -4,11 +4,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".NewPhotoRobotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhotoRobotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
         <activity
             android:name=".SignInActivity"
             android:exported="false" />
@@ -23,7 +35,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
