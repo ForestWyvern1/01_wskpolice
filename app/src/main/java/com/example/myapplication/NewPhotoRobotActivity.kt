@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.myapplication.databinding.ActivityNewPhotoRobotBinding
 import com.example.myapplication.models.FileModel
 
@@ -27,6 +28,11 @@ class NewPhotoRobotActivity : AppCompatActivity() {
 
         binding.backBtn.setOnClickListener {
             super.onBackPressed()
+        }
+
+        binding.saveBtn.setOnClickListener {
+            super.onBackPressed()
+            Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
         }
 
     }
